@@ -21,6 +21,10 @@ html {
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
+  background-color: rgb(7, 44, 84);
+  color: var(--black-text);
+  transition: background-image 2s;
+  background-size: cover;
 }
 
 img {
@@ -76,12 +80,6 @@ a {
   width: 1px;
   height: 1px;
   clip: rect(0 0 0 0);
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
