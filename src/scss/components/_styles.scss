@@ -58,3 +58,50 @@
   will-change: opacity, background-color;
   transition: opacity .3s, visibility .3s, background-color .3s;
 }
+
+.location-form__btn:hover {
+  background-color: var(--base-color);
+}
+
+.location-form__btn:active {
+  background-color: var(--base-color-active);
+}
+
+.location-form__btn:focus {
+  outline: none;
+}
+
+.location-form__icon {
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+}
+
+.location-form__icon rect {
+  transition: fill .3s;
+}
+
+.location-form__icon circle {
+  transition: stroke .3s;
+}
+
+.location-form__btn:hover .location-form__icon rect {
+  fill: white;
+}
+
+.location-form__btn:hover .location-form__icon circle {
+  stroke: white;
+}
+
+.location-form__btn:active .location-form__icon rect {
+  fill: white;
+}
+
+.location-form__btn:active .location-form__icon circle {
+  stroke: white;
+}
+
+.location-form__input:valid+.location-form__btn {
+  opacity: 1;
+  visibility: visible;
+}
