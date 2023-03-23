@@ -1,0 +1,100 @@
+.card.loading {
+  width: 30px;
+  height: 30px;
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.3);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card.full {
+  width: 100%;
+  height: 170px;
+  animation: none;
+  transform: scale(1);
+}
+
+.card.full .card__inner {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card.full .card__footer {
+  opacity: 0.6;
+}
+
+/* Стандартная */
+
+.card.glass {
+  /* From https://css.glass */
+  background-color: rgba(102, 102, 102, 0.25);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+  backdrop-filter: blur(8px);
+  /* border: 1px solid rgba(255, 255, 255, 0.4); */
+  color: white;
+  height: 80px;
+  width: 100%;
+}
+
+.card.glass .card-param__icon {
+  fill: white;
+}
+
+.card.glass .card__inner {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.card.glass .card__title {
+  transform: none;
+}
+
+.card.glass .card__desc {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.card.glass .card__icon {
+  width: 42px;
+  height: 42px;
+  filter: grayscale(1);
+}
+
+.card.glass .card-param-icon {
+  fill: white;
+}
+
+.card.glass:hover {
+  height: 170px;
+  background-color: rgba(33, 33, 33, 0.3);
+}
+
+.card.glass:hover .card__title {
+  transform: translateY(-12px);
+}
+
+.card.glass:hover .card__icon {
+  width: 80px;
+  height: 80px;
+}
+
+.card.glass:hover .card__desc {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card.glass:hover .card__footer {
+  opacity: 0.6;
+}
