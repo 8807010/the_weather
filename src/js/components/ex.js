@@ -1,7 +1,17 @@
+const APIKEY = '771462bf640c00d0105b972d46ef71d8'
+
 const $cardsBox = document.getElementById('cards-box')
 const $locationForm = document.getElementById('location-form')
 const $locationInput = document.getElementById('location-form-input')
 let currentCard = null
+
+async function getWeatherData(location) {
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${APIKEY}&units=metric`)
+
+  const data = await response.json()
+
+  return data
+}
 
 function getNewCard() {
   const $card = document.createElement('div')
