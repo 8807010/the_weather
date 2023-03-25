@@ -6,7 +6,7 @@ const $locationInput = document.getElementById('location-form-input')
 let currentCard = null
 
 async function getWeatherData(location) {
-  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${APIKEY}&units=metric`)
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${APIKEY}&units=metric&lang=ru`)
 
   const data = await response.json()
 
