@@ -5,8 +5,8 @@
 
   &__icon {
     flex-shrink: 0;
-    width: 34px;
-    height: 34px;
+    width: calc(var(--index) * 2);
+    height: calc(var(--index) * 2);
     transition: fill 0.4s;
 
     &_footer {
@@ -16,10 +16,11 @@
   }
 
   &__text {
-    font-size: 28px;
+    font-size: calc(var(--index) * 1.2);
 
     &_footer {
-      font-size: 24px;
+      font-size: calc(var(--index) * 1.2);
+      ;
     }
   }
 }

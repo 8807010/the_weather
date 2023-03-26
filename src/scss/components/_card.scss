@@ -15,12 +15,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px;
+    padding: calc(var(--index) * 1);
     // opacity: 0;
     transition: opacity 0.4s, transform 0.4s;
     // transform: scale(0);
     will-change: opacity, transform;
     height: 100%;
+
+    @media (max-width: 580px) {
+      padding: calc(var(--index) * 1.2);
+    }
   }
 
   &__head {
@@ -38,8 +42,8 @@
 
   &__icon {
     flex-shrink: 0;
-    width: 80px;
-    height: 80px;
+    width: calc(var(--index) * 2.5);
+    height: calc(var(--index) * 2.5);
     background-size: 120%;
     background-repeat: no-repeat;
     background-position: center;
@@ -49,7 +53,7 @@
   }
 
   &__title {
-    font-size: 28px;
+    font-size: calc(var(--index) * 1.8);
     margin: 0;
     max-width: 280px;
     // overflow: hidden;
@@ -67,6 +71,7 @@
     transform: translateY(-10px);
     will-change: opacity;
     transition: opacity 0.4s, visibility 0.2s;
+    font-size: calc(var(--index) * 1);
   }
 
   &__footer {
