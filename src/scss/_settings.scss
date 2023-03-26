@@ -7,7 +7,6 @@ html {
 *::after {
   box-sizing: inherit;
   transition-timing-function: cubic-bezier(0.600, -0.280, 0.735, 0.045);
-
 }
 
 .page {
@@ -21,7 +20,7 @@ html {
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
-  background-color: rgb(7, 44, 84);
+  background-color: rgb(39, 94, 153);
   color: var(--black-text);
   transition: background-image 2s;
   background-size: cover;

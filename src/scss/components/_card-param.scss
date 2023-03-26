@@ -1,0 +1,25 @@
+.card-param {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__icon {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    transition: fill 0.4s;
+
+    &_footer {
+      width: 26px;
+      height: 26px;
+    }
+  }
+
+  &__text {
+    font-size: 28px;
+
+    &_footer {
+      font-size: 24px;
+    }
+  }
+}

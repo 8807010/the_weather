@@ -1,0 +1,19 @@
+.app {
+  &__container {
+    display: grid;
+    grid-template-rows: 200px auto;
+    margin: 0 auto;
+    max-width: 580px;
+    padding: 0 10px;
+    height: 100vh;
+    gap: 20px;
+
+    &.app__container_top {
+      grid-template-rows: 84px auto;
+    }
+
+    &-top {
+      align-self: flex-end;
+    }
+  }
+}

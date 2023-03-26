@@ -5,7 +5,8 @@
 @import "settings";
 
 // подключения компонентов страницы
-@import "./components/header";
-@import "./components/styles";
+@import "./components/app";
+@import "./components/location-form";
 @import "./components/card";
 @import "./components/loading";
+@import "./components/card-param";
